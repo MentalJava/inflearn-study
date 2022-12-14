@@ -42,3 +42,27 @@ sayHello(callbackFunc);
 sayHello(function (value) {
   console.log(value);
 });
+
+setTimeout(function () {
+  console.log("3초 뒤 실행");
+}, 3000);
+console.log("실행");
+
+var result = fetch("url address");
+console.log(result);
+result
+  .then(function () {
+    console.log("실행 완료");
+  })
+  .catch(function () {
+    console.log("에러 발생");
+  });
+
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then(function () {
+    console.log("response : ", response);
+  })
+  .catch(function () {
+    console.log("error : ", error);
+  });
+console.log("바로 실행");
