@@ -42,7 +42,7 @@ console.log("2" * 2); /* 숫자로 변환 후 4로 반환 */
 
 /* Array, Object */
 let ranking = [
-  "jason",
+  "Jason",
   "Alice",
   "Chris",
   "Jane",
@@ -52,3 +52,16 @@ let ranking = [
       ranking[1] --> "Alice" 
       ranking[2] --> "Chris" 
       순서가 존재하는 데이터 창고 */
+
+/* 배열 메소드 */
+ranking.push("Jane"); /* 배열 추가 , 반환값으로 배열의 길이를 반환*/
+
+console.log(ranking);
+
+ranking.pop; /*배열 가장 끝에 위치한 데이터 제거, 삭제 완료한 데이터 표출*/
+
+ranking.includes(
+  "Chris"
+); /* 데이터 유무 판단, true or false로 반환 (boolean) */
+
+ranking.indexOf("Chris"); /* index 값 반환 */
