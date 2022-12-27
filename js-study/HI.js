@@ -95,3 +95,22 @@ console.log(jasonData[name]); /* 변수 선언 후 출력하면 25 도출 */
 
 let key = "gender";
 console.log(jasonData[key]); /* --> Male */
+
+/* 객체 메소드 */
+Object.keys(jasonData); /* key 모음을 배열로 가져오기 (문자열) */
+
+Object.values(jasonData); /* value 모음을 배열로 가져오기 (데이터) */
+
+let result = Object.keys(jasonData);
+console.log(result);
+
+console.log(result.includes("name")); /* true */
+
+console.log(Object.values(jasonData));
+
+jasonData.favoriteFood = [
+  "rice",
+  "noodle",
+  "chicken",
+]; /* 새로운 property 추가 */
+console.log(jasonData);
