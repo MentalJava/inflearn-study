@@ -65,3 +65,33 @@ ranking.includes(
 ); /* 데이터 유무 판단, true or false로 반환 (boolean) */
 
 ranking.indexOf("Chris"); /* index 값 반환 */
+
+/* 객체 */
+let userData = {
+  name: "Jason" /* key : value */,
+  age: 25,
+  gender: "Male",
+};
+
+/* Dot notation */
+userData.name; /* --> Jason */
+userData.email = "jason@test.com"; /* 새로운 데이터 추가 */
+
+/* Bracket notation */
+userData["name"]; /* --> "Jason" [name]로 하게 되면 변수로 인식 */
+
+const jasonData = {
+  name: "Jason",
+  age: 25,
+  gender: "Male",
+};
+console.log(jasonData);
+console.log(jasonData.name);
+console.log(jasonData["name"]);
+console.log(jasonData[name]); /* 변수로 인식 에러 */
+
+let name = "age";
+console.log(jasonData[name]); /* 변수 선언 후 출력하면 25 도출 */
+
+let key = "gender";
+console.log(jasonData[key]); /* --> Male */
